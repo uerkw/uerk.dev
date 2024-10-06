@@ -4,6 +4,8 @@ import {
   LSystemsProjectCard,
   PortfolioProjectCard,
   SolidProjectCard,
+  SopsTfProjectCard,
+  UerkAutosProjectCard,
 } from "~/components/ui/CompositeProjectCards";
 import { ExperienceItem } from "~/components/ui/ExperienceItem";
 import { Headshot } from "~/components/ui/Headshot";
@@ -69,7 +71,6 @@ export default function Index() {
           <div className="w-full md:w-1/3">
             <SolidProjectCard />
           </div>
-
           <div className="w-full md:w-1/3">
             <HuffmanProjectCard />
           </div>
@@ -78,6 +79,12 @@ export default function Index() {
           </div>
           <div className="w-full md:w-1/3">
             <PortfolioProjectCard />
+          </div>
+          <div className="w-full md:w-1/3">
+            <UerkAutosProjectCard />
+          </div>
+          <div className="w-full md:w-1/3">
+            <SopsTfProjectCard />
           </div>
         </div>
         <h1 className="mb-1 text-xl tracking-wider font-bold text-slate-200 md:mb-4 md:text-4xl">

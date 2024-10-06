@@ -52,3 +52,29 @@ export const PortfolioProjectCard = () => {
     </a>
   );
 };
+
+export const UerkAutosProjectCard = () => {
+  return (
+    <a href="https://github.com/uerkw/astro.uerk.autos">
+      <HighlightCard>
+        <ProjectCardDetails
+          title="Uerk.Autos"
+          text="A website for my dad's project car. Built with Astro and Tailwind."
+        />
+      </HighlightCard>
+    </a>
+  );
+};
+
+export const SopsTfProjectCard = () => {
+  return (
+    <a href="https://github.com/uerkw/sops-tf-minimal">
+      <HighlightCard>
+        <ProjectCardDetails
+          title="Using SOPS with Terraform"
+          text="An example of using SOPS to encrypt and decrypt secrets in Terraform"
+        />
+      </HighlightCard>
+    </a>
+  );
+};
