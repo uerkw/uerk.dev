@@ -1,6 +1,19 @@
 import { HighlightCard } from "./HighlightCard";
 import { ProjectCardDetails } from "./ProjectCardDetails";
 
+export const KromerProjectCard = () => {
+  return (
+    <a href="https://github.com/ReconnectedCC/kromer/">
+      <HighlightCard>
+        <ProjectCardDetails 
+          title = "Kromer"
+          text = "An economy system for the ReconnectedCC Minecraft Server. Utilizes a non-blockchain cryptocurrency that acts as a centralized source for tracking economy events"
+        />
+      </HighlightCard>
+    </a>
+  )
+}
+
 export const SolidProjectCard = () => {
   return (
     <a href="https://github.com/uerkw/solid-uploader">
@@ -47,6 +60,19 @@ export const PortfolioProjectCard = () => {
         <ProjectCardDetails
           title="Portfolio Page"
           text="The page you're reading now! Made with 💖 using React, Remix, and Tailwind. All hosted for free on CloudFlare Pages! "
+        />
+      </HighlightCard>
+    </a>
+  );
+};
+
+export const SopsTfProjectCard = () => {
+  return (
+    <a href="https://github.com/uerkw/sops-tf-minimal">
+      <HighlightCard>
+        <ProjectCardDetails
+          title="Using SOPS with Terraform"
+          text="An example of using SOPS to encrypt and decrypt secrets in Terraform"
         />
       </HighlightCard>
     </a>

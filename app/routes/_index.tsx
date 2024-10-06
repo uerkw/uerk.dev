@@ -1,9 +1,11 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 import {
   HuffmanProjectCard,
+  KromerProjectCard,
   LSystemsProjectCard,
   PortfolioProjectCard,
   SolidProjectCard,
+  SopsTfProjectCard,
 } from "~/components/ui/CompositeProjectCards";
 import { ExperienceItem } from "~/components/ui/ExperienceItem";
 import { Headshot } from "~/components/ui/Headshot";
@@ -51,15 +53,15 @@ export default function Index() {
             ABOUT
           </h1>
           <p>
-            I&apos;m a 25 year old software enthusiast with over 5 years
-            experience building web apps at scale. I&apos;m amibitious about the
-            delivery of web apps, and the architecture that powers highly
-            available software. I&apos;ve delivered applications on platforms
-            such as AWS, Azure, and on-premises that power education SaaS
+            I&apos;m a 25 year old software and tech enthusiast with over 5 years
+            experience building web apps and serving the IT industry. I&apos;m amibitious about the
+            delivery of web apps, the architecture that powers highly
+            available software, and the growing needs of the IT industry. I&apos;ve adminstrated and delivered
+            applications on platforms such as AWS, Azure, and on-premises that power education SaaS
             solutions, industrial manufacturing platforms, and applications
             adhering to governance compliance. Lately, I&apos;ve been working on
             applications with varying levels of reactivity, and self-hosting
-            Kubernetes on virtual cloud servers.
+            Kubernetes on personal and cloud hardware.
           </p>
         </div>
         <h1 className="mb-1 text-xl tracking-wider font-bold text-slate-200 md:mb-4 md:text-4xl">
@@ -67,9 +69,11 @@ export default function Index() {
         </h1>
         <div className="flex flex-row flex-wrap content-center justify-center gap-x-4 gap-y-4 pb-4">
           <div className="w-full md:w-1/3">
+            <KromerProjectCard />
+          </div>
+          <div className="w-full md:w-1/3">
             <SolidProjectCard />
           </div>
-
           <div className="w-full md:w-1/3">
             <HuffmanProjectCard />
           </div>
@@ -78,6 +82,9 @@ export default function Index() {
           </div>
           <div className="w-full md:w-1/3">
             <PortfolioProjectCard />
+          </div>
+          <div className="w-full md:w-1/3">
+            <SopsTfProjectCard />
           </div>
         </div>
         <h1 className="mb-1 text-xl tracking-wider font-bold text-slate-200 md:mb-4 md:text-4xl">
@@ -91,13 +98,13 @@ export default function Index() {
           />
           <ExperienceItem
             company="Powerschool"
-            title="FULL-STACK ENGINEER"
+            title="ENGINEER I"
             timespan="Jan 2022 - Feb 2023"
           />
           <ExperienceItem
             company="Plastic Technologies, Inc"
-            title="SOFTWARE ENGINEER"
-            timespan="Jan 2019 - Mar 2021"
+            title="IT ENGINEER"
+            timespan="Mar 2019 - Mar 2021"
           />
         </div>
       </div>
